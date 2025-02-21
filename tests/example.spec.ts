@@ -1,10 +1,11 @@
 import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
+  // await page.goto('https://playwright.dev/');
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  // await expect(page).toHaveTitle(/Playwright/);
+  await page.goto('https://material.playwrightvn.com/');
+  await expect(page).toHaveTitle(/Tài liệu học automation test - Playwright Việt Nam/);
 });
 
 test('get started link', async ({ page }) => {
