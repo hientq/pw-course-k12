@@ -13,9 +13,19 @@ function isPerfectMan(targetObject) {
   return result;
 }
 
-let finalResult = isPerfectMan(employee);
-if (!finalResult) {
-  console.log(`${employee.name} is not a perfect man to marry!`);
-} else {
-  console.log(`${employee.name} is a pefect man to marry!`);
-}
+console.log(employee);
+
+// Add more attribute
+employee.height = 175;
+console.log(employee);
+
+// Delete attribute
+delete employee.height;
+console.log(employee);
+
+// let finalResult = isPerfectMan(employee);
+// if (!finalResult) {
+//   console.log(`${employee.name} is not a perfect man to marry!`);
+// } else {
+//   console.log(`${employee.name} is a pefect man to marry!`);
+// }
