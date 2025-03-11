@@ -15,7 +15,7 @@ test("todo page", async ({ page }) => {
     }
   });
   await test.step("delete odd todos", async () => {
-    await page.on("dialog", async (dialog) => dialog.accept());
+    page.on("dialog", async (dialog) => dialog.accept());
     for (let i = 1; i <= 100; i++) {
       if (i % 2 == 0) {
         continue;
